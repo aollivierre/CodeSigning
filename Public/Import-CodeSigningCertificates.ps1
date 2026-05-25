@@ -316,10 +316,10 @@ function Import-CodeSigningCertificates {
     Write-Host "`n=======================================================" -ForegroundColor White
     Write-Host "CERTIFICATE IMPORT SUMMARY" -ForegroundColor Cyan
     Write-Host "=======================================================" -ForegroundColor White
-    Write-Host "Root CA Certificate     : $(if ($rootSuccess) { "Imported ✓" } else { "Failed ✗" })" -ForegroundColor $(if ($rootSuccess) { "Green" } else { "Red" })
-    Write-Host "Issuing CA Certificate  : $(if ($issuingSuccess) { "Imported ✓" } else { "Failed ✗" })" -ForegroundColor $(if ($issuingSuccess) { "Green" } else { "Red" })
-    Write-Host "Code Signing Certificate: $(if ($codeSuccess) { "Imported ✓" } else { "Failed ✗" })" -ForegroundColor $(if ($codeSuccess) { "Green" } else { "Red" })
-    Write-Host "Code Signing PFX        : $(if ($pfxSuccess) { "Imported ✓" } else { "Failed ✗" })" -ForegroundColor $(if ($pfxSuccess) { "Green" } else { "Red" })
+    Write-Host "Root CA Certificate     : $(if ($rootSuccess) { "Imported [OK]" } else { "Failed [FAIL]" })" -ForegroundColor $(if ($rootSuccess) { "Green" } else { "Red" })
+    Write-Host "Issuing CA Certificate  : $(if ($issuingSuccess) { "Imported [OK]" } else { "Failed [FAIL]" })" -ForegroundColor $(if ($issuingSuccess) { "Green" } else { "Red" })
+    Write-Host "Code Signing Certificate: $(if ($codeSuccess) { "Imported [OK]" } else { "Failed [FAIL]" })" -ForegroundColor $(if ($codeSuccess) { "Green" } else { "Red" })
+    Write-Host "Code Signing PFX        : $(if ($pfxSuccess) { "Imported [OK]" } else { "Failed [FAIL]" })" -ForegroundColor $(if ($pfxSuccess) { "Green" } else { "Red" })
     Write-Host "=======================================================" -ForegroundColor White
     
     # Final certificate store verification
